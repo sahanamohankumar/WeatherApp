@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp"
+    android:background="@drawable/atlaground"
+    android:id="@+id/activity_main">
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/dateText"
+        android:text="TextView"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateText"
+        android:layout_marginTop="10dp"
+        android:text="Temp:"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateText"
+        android:layout_alignStart="@+id/date"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tempText"
+        android:text="TextView"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/minTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempText"
+        android:layout_marginLeft="15dp"
+        android:text="Min:"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempText"
+        android:layout_marginLeft="50dp"
+        android:text="textView"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/maxTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minTempText"
+        android:layout_marginLeft="15dp"
+        android:text="Max:"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minTempText"
+        android:layout_marginLeft="50dp"
+        android:text="TextView"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/feelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempText"
+        android:layout_marginTop="50dp"
+        android:text="Description:"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/feel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/feelText"
+        android:text="TextView"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:textColor="@color/black"
+       />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/zuko"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/temp"
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="code"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:layout_below="@id/editTextText"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonbackground"/>
+
+    <TextView
+        android:id="@+id/datedesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:text="Date"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/feeldesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/datedesc"
+        android:text="Feel"
+        android:padding="10dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/mindesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/feeldesc"
+        android:text="Min"
+        android:padding="10dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/maxdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/mindesc"
+        android:text="Max"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date2"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/aangatla"
+            />
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="desc2"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/min2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min2"
+            android:layout_below="@+id/date2"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/max2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="max2"
+            android:layout_below="@+id/date3"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="90dp"
+        >
+        <TextView
+            android:id="@+id/date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date3"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/kataratwo"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="desc3"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/min3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min3"
+            android:layout_below="@+id/date2"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/max3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="max3"
+            android:layout_below="@+id/date3"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="160dp">
+
+        <TextView
+            android:id="@+id/date4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date4"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/sokka"
+            />
+
+        <TextView
+            android:id="@+id/desc4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="desc4"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/min4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min4"
+            android:layout_below="@+id/date2"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/max4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="max4"
+            android:layout_below="@+id/date3"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="225dp">
+
+        <TextView
+            android:id="@+id/date5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date5"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:src="@drawable/toph"
+            />
+
+        <TextView
+            android:id="@+id/desc5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="desc5"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/min5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min5"
+            android:layout_below="@+id/date4"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/max5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="max5"
+            android:layout_below="@+id/date4"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+
+    </TableRow>
+
+
+
+
+</RelativeLayout>
